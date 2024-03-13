@@ -4,12 +4,12 @@ Build a simple chatbot that responds to user inputs based on predefined rules. U
 ![image](https://github.com/KhanRayyan3622/codsoft_taskno.1/assets/92469975/43ef5784-67b0-47ac-9b87-1e6c326be66f)
 
 # CODE
-import random
-import re
-
-class SupportBot:
-    negative_res = ("no", "nope", "nahi", "nay", "not a chance", "sorry")
-    exit_commands = ("end", "quit", "pause", "exit", "goodbye", "bye", "farewell")
+    import random
+    import re
+    
+    class SupportBot:
+        negative_res = ("no", "nope", "nahi", "nay", "not a chance", "sorry")
+        exit_commands = ("end", "quit", "pause", "exit", "goodbye", "bye", "farewell")
 
     def __init__(self):
         self.support_responses = {
@@ -77,7 +77,11 @@ class SupportBot:
                      "My apologies, can you provide more details?\n"]
         return random.choice(responses)
 
-bot = SupportBot()
-bot.greet()
+    bot = SupportBot()
+    bot.greet()
+
+# OUTPUT
+   ![image](https://github.com/KhanRayyan3622/codsoft_taskno.1/assets/92469975/178cbb57-6a6e-48e8-b8e5-47fd1ed13605)
+ 
 
 
